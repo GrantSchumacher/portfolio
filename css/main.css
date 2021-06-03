@@ -1,8 +1,63 @@
-body * {
+body {
   font-family: sofia-pro-soft;
   color: black;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: scroll;
 }
 
-test{
-  font-size 200px;
+section {
+  height: 100vh;
+  color: black;
+  scroll-snap-align: start;
 }
+
+section:nth-of-type(1) {
+  background-color: white;
+}
+
+section:nth-of-type(2) {
+  background: white;
+}
+
+.bob-animate {
+  -webkit-animation: bobbing;
+          animation: bobbing;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes bobbing {
+  0% {
+    -webkit-transform: translateY(0em);
+            transform: translateY(0em);
+  }
+  50% {
+    -webkit-transform: translateY(0.5em);
+            transform: translateY(0.5em);
+  }
+  100% {
+    -webkit-transform: translateY(0em);
+            transform: translateY(0em);
+  }
+}
+
+@keyframes bobbing {
+  0% {
+    -webkit-transform: translateY(0em);
+            transform: translateY(0em);
+  }
+  50% {
+    -webkit-transform: translateY(0.5em);
+            transform: translateY(0.5em);
+  }
+  100% {
+    -webkit-transform: translateY(0em);
+            transform: translateY(0em);
+  }
+}
+/*# sourceMappingURL=main.css.map */

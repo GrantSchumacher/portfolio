@@ -1,0 +1,43 @@
+
+body {
+    font-family: sofia-pro-soft;
+    color: black;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+section {
+    height: 100vh;
+    color: black;
+    scroll-snap-align: start;
+
+    &:nth-of-type(1){
+        background-color: white;
+
+    }
+    &:nth-of-type(2){
+        background: white;
+        
+    }
+}
+
+.bob-animate{
+    animation: bobbing;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes bobbing {
+    0%{
+        transform: translateY(0em);
+    }
+    50%{
+        transform: translateY(.5em);
+    }
+    100%{
+        transform: translateY(0em);
+    }
+    
+}
