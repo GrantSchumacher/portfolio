@@ -1,24 +1,38 @@
+html {
+    scroll-behavior: smooth;
+  }
 
 body {
     font-family: sofia-pro-soft;
     color: black;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+    
 }
 
 section {
     height: 100vh;
     color: black;
-    scroll-snap-align: start;
+    
 
     &:nth-of-type(1){
         background-color: white;
 
     }
     &:nth-of-type(2){
-        background: white;
+        background-color: white;
         
     }
+}
+
+h1{
+    font-size: 4em;
+}
+h2{
+    font-size: 3em;
+}
+h3{
+    font-size: 2em;
 }
 
 .bob-animate{
@@ -41,3 +55,174 @@ section {
     }
     
 }
+
+.grow-animation{
+    animation: grow;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+.grow-animation-reverse{
+    animation: grow;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+}
+
+@keyframes grow{
+    0%{
+        transform: scale(1, 1);
+    }
+    100%{
+        transform: scale(20, 20);
+    }
+}
+
+.reveal {
+    position: relative;
+  }
+  .reveal-inner {
+    animation: lr-content 360ms;
+    animation-delay: 1890ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  .reveal::before {
+    content: '';
+    background: rgba(25,178,210,1);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    animation: lr-bar 750ms;
+    animation-fill-mode: both;
+    animation-delay: 1500ms;
+    animation-timing-function: cubic-bezier(0.500, 0.250, 0.500, 0.750);
+  }
+  
+  input.button {
+    font-family: 'Fira Sans';
+    font-weight: 400;
+    font-size: 14px;
+    padding: .1em .4em;
+    background: transparent;
+    border-radius: .15em;
+    margin-top: 1rem;
+  }
+  
+  @keyframes lr-bar {
+    0% { transform-origin: center left 0px; transform: scaleX(0); }
+    36% { transform: scaleX(1); transform-origin: center left 0px; }
+    54% { transform: scaleX(1); transform-origin: center right 0px; }
+    90% { transform: scaleX(0);  transform-origin: center right 0px; }
+    100% { transform: scaleX(0);  transform-origin: center right 0px; }
+  }
+  
+  @keyframes lr-content {
+    0% { opacity: 1; }
+    100% { opacity: 1; }
+  }
+
+  .hands{
+    width: 60%; 
+    height: auto;
+  }
+
+  .astroid1{
+    width: 40%;
+    height: auto;
+    margin-right: 3em;
+  }
+  .astroid2{
+      width: 30%;
+      height: auto;
+      margin-left: 3em;
+      margin-top: 5em;
+  }
+  .astroid3{
+    width: 10%;
+    height: auto;
+    margin-right: 20em;
+    margin-top: 10em;
+  }
+
+  .astroid5{
+      width: 20%;
+      height: auto;
+      margin-top: -3em;
+      margin-left: 5em;
+  }
+  .astroid6{
+    width: 40%;
+    height: auto;
+    margin-top: -20em;
+    margin-right: -17em;
+  }
+  .alien-astroid{
+    width: 40%;
+    height: auto;
+    }
+
+  .profile-pic{
+      width: 75%;
+      height: auto;
+  }
+    // Extra small devices (portrait phones, less than 576px)
+    @media (max-width: 575.98px) {  
+        #section2{
+            background-color: yellow;
+        }
+        #hands{
+            width: 120%;
+            height: auto;
+        }
+        #astroid1{
+            width: 80%;
+            height: auto;
+            margin-right: -1em;
+        }
+        #astroid2{
+          width: 70%;
+          height: auto;
+          margin-left: -3em;
+        }
+        #astroid3{
+            width: 30%;
+            height: auto;
+            margin-right: -10em;
+  
+        }
+        #astroid5{
+          width: 40%;
+          height: auto;
+          margin-left: -5em;
+          margin-top: 0em;
+          margin-bottom: -5em;
+        }
+
+        #astroid6{
+            width: 70%;
+            height: auto;
+        }
+        #alienAstroid{
+            width: 80%;
+            height: auto;
+            margin-top: 2em;
+            margin-right: 2em;
+        }
+        
+    }
+
+    // Small devices (landscape phones, less than 768px)
+    @media (max-width: 767.98px) {  }
+
+    // Medium devices (tablets, less than 992px)
+    @media (max-width: 991.98px) {  }
+
+    // Large devices (desktops, less than 1200px)
+    @media (max-width: 1199.98px) {  }
+
+
+   
