@@ -5,6 +5,6 @@ $(document).ready(function(){
     $(document.getElementById("nextsection")).click(function() {
     
           $('html,body').animate({
-              scrollTop: $(document.getElementById("section3")).offset().top},3000);
+              scrollTop: $(document.getElementById("section3")).offset().top},1000);
       }); 
   });
