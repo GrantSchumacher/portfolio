@@ -1,0 +1,78 @@
+.ambient-rect{
+    opacity: 0;
+    animation: spin-and-fade 10s 1s ease-in-out none infinite;
+}
+.ambient-circle-1{
+    opacity: 0;
+    stroke-width: 10;
+    animation: fade-in-and-out 15s 2s ease-in-out none infinite;
+}
+.ambient-circle-2{
+    opacity: 0;
+    animation: drop-and-fade 15s 4s ease-out none infinite;
+}
+@keyframes spin-and-fade {
+    0%{
+        opacity: 10%;
+    }
+    50%{
+        opacity: 20%;
+    }
+    100%{
+        transform: scale(0);
+        opacity: 0;
+        transform: rotate(45deg);
+    }
+}
+@keyframes fade-in-and-out {
+    0%{
+        opacity: 0;
+        transform: rotate(5deg);
+    }
+    50%{
+        opacity: 40%;
+        scale: (1);
+    }
+    100%{
+        opacity: 100%;
+        transform: rotate(-25deg);
+    }
+    
+}
+@keyframes drop-and-fade {
+    0%{
+        opacity: 0;
+        transform: rotate(-20deg);
+    }
+    50%{
+        opacity: 25%;
+        transform: scaleX(-30px);
+    }
+    100%{
+        transform: translateY(200px);
+        opacity: 0;
+    }
+}
+
+.bob-animate-slow{
+    animation: slow-bobbing;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    transform: translateX(5em);
+    
+}
+
+@keyframes slow-bobbing {
+    0%{
+        transform: translateY(0);
+       
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+    
+}
