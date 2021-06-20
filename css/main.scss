@@ -6,28 +6,8 @@ html {
 body {
     font-family: sofia-pro;
     overflow-y: scroll;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(245, 245, 245);
     height: 100%;
-}
-
-section {
-    height: 100vh;
-    background-color: rgb(248, 248, 248);;
-    
-
-    &:nth-of-type(1){
-        background-color: rgb(248, 248, 248);
-
-    }
-    &:nth-of-type(2){
-        background-color: rgb(248, 248, 248);
-        
-    }
-    &:nth-of-type(3){
-       background-color: pink
-    }
-   
-     
 }
 
 h1{
@@ -63,68 +43,11 @@ h4{
     
 }
 
-.grow-animation{
-    animation: grow;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-}
-
-.grow-animation-reverse{
-    animation: grow;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-direction: reverse;
-}
-
-@keyframes grow{
-    0%{
-        transform: scale(1, 1);
-    }
-    100%{
-        transform: scale(20, 20);
-    }
-}
-
 
   .hands{
     width: 60%; 
     height: auto;
   }
-
-  .astroid1{
-    width: 40%;
-    height: auto;
-    margin-right: 3em;
-  }
-  .astroid2{
-      width: 30%;
-      height: auto;
-      margin-left: 3em;
-      margin-top: 5em;
-  }
-  .astroid3{
-    width: 10%;
-    height: auto;
-    margin-right: 20em;
-    margin-top: 10em;
-  }
-
-  .astroid5{
-      width: 20%;
-      height: auto;
-      margin-top: -3em;
-      margin-left: 5em;
-  }
-  .astroid6{
-    width: 40%;
-    height: auto;
-    margin-top: -20em;
-    margin-right: -17em;
-  }
-  .alien-astroid{
-    width: 40%;
-    height: auto;
-    }
 
   .profile-pic{
       width: 80%;
@@ -140,9 +63,35 @@ h4{
       height: auto;
   }
 
+  
+  .process-desc{
+      margin-top: 5em;
+  }
+  .process-divider{
+      margin-top: 2em;
+  }
+ 
+  .skill-card{
+    background: #4765EB;
+    max-width: 10em; 
+    min-height: 5em; 
+    border-radius: 3em; 
+    margin: 1em;
+    
+  }
+  .skill-card-text{
+      color: white
+  }
+  .skill-card-row{
+      margin-top: 3em;
+  }
 
-
-
+  .skill-header-gradient-text{
+    background: linear-gradient(171deg, rgba(111,9,174,1) 0%, rgba(76,201,240,1) 0%, rgba(63,55,201,1) 100%);
+     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    font-weight: bold;
+  }
 
   .info-button {
 	background:linear-gradient(142deg, rgba(76,201,240,1) 0%, rgba(72,149,239,1) 58%);
@@ -216,7 +165,6 @@ h4{
         min-height: 20em;
         min-width: 100%;
       }
-      .reverse-info0-c
       .project-header{
           margin-top: .5em;
           margin-left: 0em;
@@ -278,6 +226,19 @@ h4{
       .agency-info-button:hover{
         background: linear-gradient(159deg, rgba(247,37,133,1) 52%, rgba(205,59,184,1) 100%);
       }
+      .process-section{
+        margin-top: 5em;
+    }
+    .skill-header{
+        text-align: center;
+        margin-top: 2em;
+    }
+    .skills-section{
+        margin-top: 0em;
+    } 
+    .project-section{
+        margin-top: 10em;
+    }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -373,6 +334,13 @@ h4{
       .agency-info-button:hover{
         background: linear-gradient(159deg, rgba(247,37,133,1) 52%, rgba(205,59,184,1) 100%);
       }
+      .process-section{
+        margin-top: 5em;
+    }
+    .skills-section{
+        margin-top: 3em;
+    }
+    
  }
 
 // Large devices (desktops, 992px and up)
@@ -384,6 +352,15 @@ h4{
     }
     .call-to-action{
         margin-top: 1em;
+    }
+    #aboutSection{
+        margin-top: 10em;
+    }
+    #processSection{
+        margin-top: 10em;
+    }
+    #projectSection{
+        margin-top: 10em;
     }
     .divider{
         width: 6em;
@@ -411,6 +388,9 @@ h4{
         text-align: left;
         min-height: 30em;
         min-width: 30em;
+      }
+      .reverse-info-column{
+        border-radius: 0 2em 2em 0;
       }
       .project-header{
           margin-top: 1.5em;
@@ -468,6 +448,10 @@ h4{
       .agency-info-button:hover{
         background: linear-gradient(159deg, rgba(247,37,133,1) 52%, rgba(205,59,184,1) 100%);
       }
+
+      .process-section{
+        margin-top: 2em;
+    }
   }
 
 // X-Large devices (large desktops, 1200px and up)
@@ -551,6 +535,153 @@ h4{
        
     }
 
+    .ambient-rect{
+        opacity: 0;
+        animation: spin-and-fade 10s 1s ease-in-out none infinite;
+    }
+    .ambient-circle-1{
+        opacity: 0;
+        
+        animation: fade-in-and-out 15s 2s ease-in-out none infinite;
+    }
+    .ambient-circle-2{
+        opacity: 0;
+        animation: drop-and-fade 15s 4s ease-out none infinite;
+    }
 
+    .ambient-circle-3{
+        opacity: 0;
+        animation: circle-and-fade 10s 4s ease-out none infinite;
+    }
+    .ambient-circle-4{
+        opacity: 0;
+        animation: fall-and-fade 5s 5s ease-in-out none infinite;
+    }
+
+    .mouse-click{
+        opacity: 0;
+        animation: click 2s 3s linear none infinite;
+    }
+
+    .cell-phone{
+        animation: rotate-phone 10s 0s ease-in-out infinite;
+    }
+    @keyframes rotate-phone {
+        0%{
+
+        }
+        50%{
+            transform: rotate(7deg);
+        }
+        100%{
+
+        }
+    }
+
+    @keyframes click{
+        0%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 100;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+    @keyframes circle-and-fade{
+        0%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 20%;
+            
+        }
+        100%{
+            opacity: 0;
+            transform: rotate(20deg); 
+            
+        }
+    }
+
+    @keyframes fall-and-fade{
+        0%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 30%;
+
+        }
+        100%{
+            opacity: 0;
+            transform: translatey(-55px);
+        }
+    }
+
+    @keyframes spin-and-fade {
+        0%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 20%;
+        }
+        100%{
+            transform: scale(0);
+            opacity: 0;
+            transform: rotate(45deg);
+        }
+    }
+    @keyframes fade-in-and-out {
+        0%{
+            opacity: 0;
+            transform: rotate(5deg);
+        }
+        50%{
+            opacity: 40%;
+            scale: (1);
+        }
+        100%{
+            opacity: 0%;
+            transform: rotate(-25deg);
+        }
+        
+    }
+    @keyframes drop-and-fade {
+        0%{
+            opacity: 0;
+            transform: rotate(-20deg);
+        }
+        50%{
+            opacity: 25%;
+            transform: scaleX(-30px);
+        }
+        100%{
+            transform: translateY(200px);
+            opacity: 0;
+        }
+    }
+    
+    .bob-animate-slow{
+        animation: slow-bobbing;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        transform: translateX(5em);
+        
+    }
+    
+    @keyframes slow-bobbing {
+        0%{
+            transform: translateY(0);
+           
+        }
+        50%{
+            transform: translateY(20px);
+        }
+        100%{
+            transform: translateY(0);
+        }
+        
+    }
 
    
