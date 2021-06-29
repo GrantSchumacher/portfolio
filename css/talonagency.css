@@ -1,0 +1,74 @@
+@media (min-width: 0px) {
+  .header-colored {
+    color: #4895EF;
+  }
+  .project-header {
+    font-weight: bold;
+    font-size: 3em;
+  }
+  .project-subheader {
+    font-weight: bold;
+    margin-top: 3em;
+  }
+  .project-overview {
+    color: #A6ACC9;
+  }
+  .overview-row {
+    margin-top: 5em;
+  }
+  .view-site-btn {
+    margin-left: 4em;
+    margin-top: 5em;
+  }
+  .design-row {
+    margin-top: 5em;
+  }
+  .development-row {
+    margin-top: 10em;
+  }
+  .code-cvg-img {
+    width: 100%;
+    height: auto;
+    border-radius: 3em;
+  }
+  .sprint-breakdown-img {
+    width: 100%;
+    height: auto;
+    border-radius: 3em;
+    margin-top: 3em;
+  }
+  .final-section {
+    margin-top: 3em;
+    margin-bottom: 5em;
+  }
+}
+
+@media (min-width: 768px) {
+  .project-header {
+    font-size: 3.5em;
+  }
+  .code-cvg-img {
+    width: 120%;
+  }
+}
+
+@media (min-width: 992px) {
+  .project-header {
+    font-size: 4em;
+  }
+  .project-subheader {
+    margin-top: 0em;
+  }
+  .sprint-breakdown-img {
+    width: 80%;
+    height: auto;
+  }
+  .sprint-breakdown-row {
+    margin-top: 5em;
+  }
+  .final-section {
+    margin-top: 5em;
+    margin-bottom: 5em;
+  }
+}
+/*# sourceMappingURL=talonagency.css.map */

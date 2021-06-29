@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="716px" viewBox="0 0 1440 716" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Group@3x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(0.000000, -308.000000)">
+            <g id="Group" transform="translate(-0.500000, 308.785339)">
+                <path d="M1,165.099189 L1.5,0 C225.914131,133.419132 705.580798,187.952195 1440.5,163.599189 L1440.5,715.214661 L0,715.214661 L1,165.099189 Z" id="Path-3" fill="#3A0CA3"></path>
+                <path d="M2.5,292.17592 L3,165.214661 C227.414131,267.81396 707.080798,309.749879 1442,291.02242 L1442,715.214661 L1.5,715.214661 L2.5,292.17592 Z" id="Path-3" fill="#3F37C9" transform="translate(721.750000, 440.214661) scale(-1, 1) translate(-721.750000, -440.214661) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

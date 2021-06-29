@@ -69,6 +69,7 @@ h4 {
 .hands {
   width: 60%;
   height: auto;
+  margin-top: .5em;
 }
 
 .profile-pic {
@@ -91,22 +92,6 @@ h4 {
 
 .process-divider {
   margin-top: 2em;
-}
-
-.skill-card {
-  background: #4765EB;
-  max-width: 10em;
-  min-height: 5em;
-  border-radius: 3em;
-  margin: 1em;
-}
-
-.skill-card-text {
-  color: white;
-}
-
-.skill-card-row {
-  margin-top: 3em;
 }
 
 .skill-header-gradient-text {
@@ -163,6 +148,14 @@ h4 {
   margin-left: 3.5em;
 }
 
+.footer-section {
+  background-image: url(/assets/footer_background.svg);
+  background-size: cover;
+  background-position-y: 0em;
+  background-repeat: no-repeat;
+  min-height: 50em;
+}
+
 @media (min-width: 0px) {
   .divider {
     width: 6em;
@@ -171,12 +164,36 @@ h4 {
   .hands {
     width: 200%;
     height: auto;
+    margin-top: 5em;
+  }
+  .nav-link {
+    color: black;
+  }
+  .nav-item {
+    text-align: center;
+  }
+  .navbar-brand-text {
+    color: #3F37C9;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin-left: .5em;
+  }
+  .navbar-toggler {
+    border-color: #4895EF;
+    margin-right: .5em;
+    border-style: none;
+  }
+  .large-links {
+    display: none;
   }
   .call-to-action {
-    margin-top: 3em;
+    margin-top: 5em;
+  }
+  .about-section {
+    margin-top: 11em;
   }
   .talon-image-column {
-    background-color: white;
     border-radius: 2em 2em 0 0;
     background-image: url(/assets/talon_agency_mockup.png);
     background-size: 120%;
@@ -243,12 +260,14 @@ h4 {
   }
   .agency-info-button {
     margin-top: 1em;
+    background: linear-gradient(171deg, #4765eb 0%, #3a0ca3 100%);
+  }
+  .agency-info-button:hover {
+    background: #4765eb;
+    background: linear-gradient(171deg, #4765eb 42%, #3a0ca3 100%);
   }
   .agency-project-card {
     margin-top: 0em;
-  }
-  .agency-info-button:hover {
-    background: linear-gradient(159deg, #f72585 52%, #cd3bb8 100%);
   }
   .process-section {
     margin-top: 5em;
@@ -263,6 +282,27 @@ h4 {
   .project-section {
     margin-top: 10em;
   }
+  .skill-card {
+    background: #4895ef;
+    background: linear-gradient(171deg, #4895ef 0%, #3556e9 100%);
+    max-width: 8em;
+    min-width: 8em;
+    min-height: 5em;
+    border-radius: 3em;
+    margin: 1em;
+  }
+  .skill-card-text {
+    color: white;
+  }
+  .skill-card-row {
+    margin-top: 3em;
+  }
+  .icon-row {
+    margin-top: 5em;
+  }
+  .lets-vibe-button {
+    margin-top: 4em;
+  }
 }
 
 @media (min-width: 768px) {
@@ -276,6 +316,9 @@ h4 {
   .divider {
     width: 6em;
     height: auto;
+  }
+  .large-links {
+    display: block;
   }
   .talon-image-column {
     background-color: white;
@@ -346,14 +389,23 @@ h4 {
   .agency-project-card {
     margin-top: 0em;
   }
-  .agency-info-button:hover {
-    background: linear-gradient(159deg, #f72585 52%, #cd3bb8 100%);
-  }
   .process-section {
     margin-top: 5em;
   }
   .skills-section {
     margin-top: 3em;
+  }
+  .skill-card {
+    background: #4895ef;
+    background: linear-gradient(171deg, #4895ef 0%, #3556e9 100%);
+    max-width: 10em;
+    min-width: 10em;
+    min-height: 5em;
+    border-radius: 3em;
+    margin: 1em;
+  }
+  .icon-row {
+    margin-top: 5em;
   }
 }
 
@@ -361,9 +413,10 @@ h4 {
   .hands {
     width: 60em;
     height: auto;
+    margin-top: 3em;
   }
   .call-to-action {
-    margin-top: 1em;
+    margin-top: 0em;
   }
   #aboutSection {
     margin-top: 10em;
@@ -453,11 +506,16 @@ h4 {
   .agency-project-card {
     margin-top: 0em;
   }
-  .agency-info-button:hover {
-    background: linear-gradient(159deg, #f72585 52%, #cd3bb8 100%);
-  }
   .process-section {
     margin-top: 2em;
+  }
+  .info-button {
+    margin-top: 2em;
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+  .icon-row {
+    margin-top: 5em;
   }
 }
 
@@ -796,8 +854,8 @@ h4 {
             transform: translateY(0);
   }
   50% {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
   }
   100% {
     -webkit-transform: translateY(0);
@@ -811,8 +869,8 @@ h4 {
             transform: translateY(0);
   }
   50% {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
   }
   100% {
     -webkit-transform: translateY(0);

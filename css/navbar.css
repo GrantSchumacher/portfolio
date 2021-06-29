@@ -1,0 +1,54 @@
+@media (min-width: 0px) {
+  .nav-link {
+    color: black;
+  }
+  .nav-item {
+    text-align: center;
+  }
+  .navbar-brand-text {
+    color: #3F37C9;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin-left: .5em;
+  }
+  .navbar-toggler {
+    border-color: #4895EF;
+    margin-right: .5em;
+    border-style: none;
+  }
+  .dropdown-menu{
+    border-style: none;
+    margin-left: 0em;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    background: none;
+  }
+  .navbar-brand-text {
+    color: #3F37C9;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-link {
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+  .navbar {
+    margin-right: 3em;
+    margin-left: 3em;
+  }
+  .dropdown-menu{
+    border-style: none;
+    margin-left: 5em;
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=navbar.css.map */
