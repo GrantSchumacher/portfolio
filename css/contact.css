@@ -1,1 +1,36 @@
-/* No CSS *//*# sourceMappingURL=contact.css.map */
+@media (min-width: 0px) {
+  .contact {
+    color: #3556E9;
+  }
+  .sub-text {
+    margin-top: 1em;
+  }
+  body {
+    background-image: url(/assets/square_background.svg);
+    background-repeat: no-repeat;
+    background-position-y: -20em;
+    background-position-x: -45em;
+    margin-bottom: 3em;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url(/assets/square_background.svg);
+    background-repeat: no-repeat;
+    background-position-y: 0em;
+    background-position-x: -30em;
+    margin-bottom: 3em;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    background-image: url(/assets/square_background.svg);
+    background-repeat: no-repeat;
+    background-position-y: 0em;
+    background-position-x: -15em;
+    margin-bottom: 5em;
+  }
+}
+/*# sourceMappingURL=contact.css.map */
