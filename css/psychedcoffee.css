@@ -46,6 +46,35 @@
     margin-top: 3em;
     margin-bottom: 5em;
   }
+  .img-paint {
+    width: 100%;
+    height: auto;
+    border-radius: 3em;
+  }
+  .height-full {
+    height: 100vh;
+  }
+  .icon-social {
+    color: white;
+    text-decoration: none;
+    margin-right: 1em;
+  }
+  .icon-white {
+    color: white;
+  }
+  .col-margin {
+    margin-top: 6em;
+  }
+  .caret {
+    margin-left: .5em;
+  }
+  .text-bold {
+    font-weight: bold;
+  }
+  .text-bold-white {
+    font-weight: bold;
+    color: white;
+  }
 }
 
 @media (min-width: 768px) {

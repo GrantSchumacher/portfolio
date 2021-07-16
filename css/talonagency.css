@@ -12,7 +12,6 @@
   }
   .project-overview {
     color: #A6ACC9;
-    margin-top: 2em;
   }
   .overview-row {
     margin-top: 5em;
@@ -41,6 +40,32 @@
   .final-section {
     margin-top: 3em;
     margin-bottom: 5em;
+  }
+  .caret {
+    margin-left: .5em;
+  }
+  .bgnd-checks-img {
+    width: 100%;
+    height: auto;
+    border-radius: 3em;
+  }
+  .full-height {
+    height: 100vh;
+  }
+  .bold-txt {
+    font-weight: bold;
+  }
+  .bold-txt-white {
+    font-weight: bold;
+    color: white;
+  }
+  .social-icon {
+    color: white;
+    text-decoration: none;
+    margin-right: 1em;
+  }
+  .col-margin {
+    margin-top: 6em;
   }
 }
 

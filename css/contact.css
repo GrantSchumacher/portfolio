@@ -12,6 +12,13 @@
     background-position-x: -45em;
     margin-bottom: 3em;
   }
+  .text-contact {
+    font-weight: bold;
+    margin-top: 2em;
+  }
+  .row-email {
+    margin-top: 3em;
+  }
 }
 
 @media (min-width: 768px) {
