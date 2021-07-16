@@ -17,11 +17,6 @@
     margin-right: .5em;
     border-style: none;
   }
-  .dropdown-menu{
-    border-style: none;
-    margin-left: 0em;
-    text-align: center;
-  }
 }
 
 @media (min-width: 768px) {
@@ -44,11 +39,6 @@
   .navbar {
     margin-right: 3em;
     margin-left: 3em;
-  }
-  .dropdown-menu{
-    border-style: none;
-    margin-left: 5em;
-    text-align: left;
   }
 }
 /*# sourceMappingURL=navbar.css.map */
