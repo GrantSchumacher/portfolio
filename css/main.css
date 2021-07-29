@@ -36,6 +36,14 @@ h4 {
           animation-iteration-count: infinite;
 }
 
+.loader {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1000;
+}
+
 @-webkit-keyframes bobbing {
   0% {
     -webkit-transform: translateY(0px);
@@ -302,6 +310,49 @@ h4 {
   }
   .lets-vibe-button {
     margin-top: 4em;
+  }
+  .caret {
+    margin-left: .5em;
+  }
+  .down-arrow {
+    width: 3.5em;
+    height: auto;
+  }
+  .background {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+  }
+  .row-pattern-top {
+    margin-bottom: 4em;
+    z-index: 20;
+  }
+  .row-pattern-bottom {
+    margin-top: 4em;
+  }
+  .text-bold {
+    font-weight: bold;
+  }
+  .text-bold-white {
+    font-weight: bold;
+    color: white;
+  }
+  .text-process {
+    margin-top: 3em;
+  }
+  .height-full {
+    height: 100vh;
+  }
+  .icon-social {
+    color: white;
+    text-decoration: none;
+    margin-right: 1em;
+  }
+  .icon-white {
+    color: white;
+  }
+  .col-margin {
+    margin-top: 6em;
   }
 }
 

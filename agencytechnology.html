@@ -24,11 +24,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/bdv5pdm.css">
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/0e79b09a32.js" crossorigin="anonymous"></script>
-    <!-- aos scroll listener-->
-  <script src="js/aos-listeners.js"></script>
-  <!-- AOS (animate on scroll)-->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
 </head>
 
 <body>
@@ -43,7 +39,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 
-                <span>menu<i style="margin-left: .5em;" class="fas fa-caret-down"></i></span>
+                <span>menu<i class="fas fa-caret-down caret"></i></span>
 
             </button>
         </div>
@@ -114,7 +110,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 offset-md-1 ">
-                    <img src="assets/agency.png" style="width: 100%; height: auto; border-radius: 3em;">
+                    <img src="assets/agency.png" class="img-agency">
                 </div>
             </div>
             
@@ -129,23 +125,23 @@
             </div>
         </div>
         <div id="footerSection" class="container-fluid footer-section">
-            <div class="d-flex flex-row align-items-center text-center" style="height: 100vh;">
-              <div class="col" style="margin-top: 6em;">
-                <h1 style="font-weight: bold; color: white;">Like what you see?</h1>
+            <div class="d-flex flex-row align-items-center text-center height-full">
+              <div class="col col-margin">
+                <h1 class="bold-txt-white">Like what you see?</h1>
                 <div class="d-flex justify-content-center lets-vibe-button">
-                  <a href="contact.html" class="info-button shadow-lg " style="font-weight: bold;">Let's vibe <i
-                      class="fas fa-paper-plane" style="margin-left: .5em"></i></a>
+                  <a href="contact.html" class="info-button shadow-lg text-bold">Let's vibe <i
+                      class="fas fa-paper-plane caret"></i></a>
                 </div>
         
                 <div class="row justify-content-center icon-row">
                   <div class="col text-center">
                     <div>
                       <a href="https://github.com/GrantSchumacher" target="_blank" rel="noopener noreferrer"
-                        style="color: white; text-decoration: none; margin-right: 1em;"><i class="fab fa-github fa-3x"> </i>
+                        class="social-icon"><i class="fab fa-github fa-3x"> </i>
                       </a>
                       <a href="https://www.linkedin.com/in/grant-schumacher/" target="_blank" rel="noopener noreferrer"
-                        style="color: white; text-decoration: none; margin-left:1em;"><i class="fab fa-linkedin-in fa-3x"
-                          style="color: white;"></i></a>
+                        class="social-icon"><i class="fab fa-linkedin-in fa-3x fill-white"
+                          ></i></a>
                     </div>
         
                   </div>
@@ -167,9 +163,7 @@
         crossorigin="anonymous"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script>
-        AOS.init();
-      </script>
+  
 </body>
 
 </html>
